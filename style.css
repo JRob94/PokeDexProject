@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffcb05;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    background-color: #3d7dca;
+    border: 5px solid #003a70;
+    color: #ffcb05;
+    padding: 10px;
+    letter-spacing: 5px;
+    border-radius: 25px;
+}
