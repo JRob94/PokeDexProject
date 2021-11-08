@@ -1,7 +1,7 @@
 // POKEDEX PROJECT
 const  pokeContainer = document.querySelector(`#container`);
 // Number of Pokemon (Objects) in the PokeAPI. Using the first 150 pokemon
-const numOfPokemon = 150;
+const numOfPokemon = 151;
 
 // The createPokeCard function creates a new card/section and adds the new card webpage/document inside of the "container" div
 createPokeCard = (pokemon) => {
@@ -30,6 +30,7 @@ getPokemonData = async (id) => {
 // The getPokemon function loops through all the pokemon IDs and runs/executes the getPokemonData function for each ID
 getPokemon = async () => {
     for (i = 1; i <= numOfPokemon; i++){
+        console.log(i);
         await getPokemonData(i);
     }
 }
